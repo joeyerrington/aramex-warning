@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Amramex Warning",
+    "description": "Warns the user if a website ships via Aramex",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_icon": {
+        "16": "icons/safe.png",
+        "24": "icons/aramex24.png",
+        "32": "icons/aramex32.png"
+      }
+
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["empty.js"]
+      }
+    ]
+  }
+  
