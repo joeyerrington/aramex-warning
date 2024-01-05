@@ -3,10 +3,10 @@
     "name": "Amramex Warning",
     "description": "Warns the user if a website ships via Aramex",
     "version": "1.0",
-    "permissions": ["activeTab"],
+    "permissions": ["tabs", "activeTab"],
     "background": {
       "scripts": ["background.js"],
-      "persistent": false
+      "persistent": true
     },
     "browser_action": {
       "default_icon": {
